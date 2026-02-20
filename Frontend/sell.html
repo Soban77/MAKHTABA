@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sell</title>
+    <link rel="stylesheet" href="style/p.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="https://tse4.mm.bing.net/th/id/OIP.YWbXLuj6ERtdAA0dy1oCMAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </head>
+
+  <body>
+
+    <div class="ladies-section js-ladies-section">
+      Ladies
+    </div>
+
+    <div class="confirmation-overlay js-confirmation">
+      <div class="confirmation-box">
+        <h2>Are you sure?</h2>
+        <p>This action cannot be undone.</p>
+        <div class="confirmation-buttons">
+          <button class="btn-danger js-confirm-yes">Yes</button>
+          <button class="btn-secondary js-confirm-no">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.YWbXLuj6ERtdAA0dy1oCMAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+      <!-- <div class="js-home">
+        Home
+      </div>
+      <div class="js-books">
+        Books
+      </div>
+      <div>
+        Purchase
+      </div>
+      <div>
+        Sell
+      </div>
+      <div>
+        Transaction history
+      </div>
+      <div>
+        Sign out
+      </div>  -->
+
+      <div class="js-home"><i class="fa-solid fa-house"></i> Home</div>
+      <div class="js-books"><i class="fa-solid fa-book"></i> Books</div>
+      <div class="js-purchase"><i class="fa-solid fa-cart-shopping"></i> Purchase</div>
+      <div class="js-sell"><i class="fa-solid fa-handshake"></i> Sell</div>
+      <div class="js-history"><i class="fa-solid fa-clock-rotate-left"></i> History</div>
+      <div class="js-receipt"><i class="fa-solid fa-file-invoice-dollar"></i> Receipt</div>
+      <div class="js-stock"><i class="fa-solid fa-chart-line"></i> Stock</div>
+      <div class="js-signout"><i class="fa-solid fa-right-from-bracket"></i> Sign out</div>
+
+    </nav>
+
+    <section class="sell-page">
+      <h1><i class="fa-solid fa-handshake"></i> Sell Books</h1>
+      
+      <!-- Reduce quantity -->
+      <div class="form-card">
+        <h2>Reduce Quantity / Sale</h2>
+        <input type="text" placeholder="Book Name" class="sell-book-search js-sell-name" required>
+
+        <div class="searching-list js-searching-list">
+        </div>
+
+        <input type="number" placeholder="Quantity to Sell" class="js-sell-quantity" required>
+        <input type="number" placeholder="Sell Price" class="js-sell-price">
+        <button class="btn-warning js-sell-book">Sell</button>
+      </div>
+
+      <!-- Delete book -->
+      <div class="form-card">
+        <h2>Delete Book</h2>
+        <input type="text" placeholder="Book Name" class="js-delete-name" required>
+        <button class="btn-danger js-delete-book">Delete</button>
+      </div>
+
+      <div class="form-card">
+        <h2>Return Sale</h2>
+        <input type="text" placeholder="Book Name" class="return-sell-book-search js-return-sale-name" required>
+        <div class="searching-lisT js-searching-lisT">
+        </div>
+        <input type="number" placeholder="Return Quantity" class="js-return-sale-quantity" required>
+        <input type="number" placeholder="Return Sell Price" class="js-return-sale-price">
+        <button class="btn-warning js-return-sale">Return Sale</button>
+      </div>
+
+    </section>
+
+    <div id="successMessage" class="success-message"></div>
+
+    <script src="scripts/nav.js" type="module"></script>
+    <script src="scripts/purchase.js" type="module"></script>
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Summary</title>
+  <link rel="icon" href="https://tse4.mm.bing.net/th/id/OIP.YWbXLuj6ERtdAA0dy1oCMAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+  <link rel="stylesheet" href="style/stock.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/extra.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="ladies-section js-ladies-section">
+    Ladies
+  </div>
+
+  <div class="confirmation-overlay js-confirmation">
+    <div class="confirmation-box">
+      <h2>Are you sure?</h2>
+      <p>This action cannot be undone.</p>
+      <div class="confirmation-buttons">
+        <button class="btn-danger js-confirm-yes">Yes</button>
+        <button class="btn-secondary js-confirm-no">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
+  <nav>
+    <img src="https://tse4.mm.bing.net/th/id/OIP.YWbXLuj6ERtdAA0dy1oCMAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+    <!-- <div class="js-home">
+      Home
+    </div>
+    <div class="js-books">
+      Books
+    </div>
+    <div>
+      Purchase
+    </div>
+    <div>
+      Sell
+    </div>
+    <div>
+      Transaction history
+    </div>
+    <div>
+      Sign out
+    </div>  -->
+
+    <div class="js-home"><i class="fa-solid fa-house"></i> Home</div>
+    <div class="js-books"><i class="fa-solid fa-book"></i> Books</div>
+    <div class="js-purchase"><i class="fa-solid fa-cart-shopping"></i> Purchase</div>
+    <div class="js-sell"><i class="fa-solid fa-handshake"></i> Sell</div>
+    <div class="js-history"><i class="fa-solid fa-clock-rotate-left"></i> History</div>
+    <div class="js-receipt"><i class="fa-solid fa-file-invoice-dollar"></i> Receipt</div>
+    <div class="js-stock"><i class="fa-solid fa-chart-line"></i> Stock</div>
+    <div class="js-signout"><i class="fa-solid fa-right-from-bracket"></i> Sign out</div>
+
+  </nav>
+
+  <section class="stock-page">
+    <h1><i class="fa-solid fa-chart-line"></i> Stock Summary</h1>
+
+    <div class="stock-summary js-stock-summary">
+      <!-- Sales and Purchase totals will be injected here -->
+    </div>
+  </section>
+
+  <script src="scripts/stock.js" type="module"></script>
+  <script src="scripts/nav.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/*
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 200px;
+  background-color: rgb(32, 50, 116);
+  color: white;
+
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 25%;
+}
+
+nav img {
+  width: 120px;
+  height: 80px;
+
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px 0px;
+
+  align-items: center;
+  cursor: pointer; 
+}
+
+nav div:hover {
+  background-color: rgb(161, 130, 153);
+  border-radius: 8px;
+}
+*/
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background: linear-gradient(180deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 4px 0 15px rgba(0,0,0,0.3);
+}
+
+nav img {
+  width: 120px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+nav div {
+  padding: 12px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav div:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 8px;
+  transform: scale(1.05);
+}
+
+.ladies-section {
+  position: fixed;
+  left: 20px;   /* adjust placement */
+  top: 10px;
+  background-color: #e91e63; /* pinkish tone */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: none; /* hidden by default */
+  z-index: 200;
+}

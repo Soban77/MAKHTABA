@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/book.css">
+    <link rel="stylesheet" href="style/extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="https://tse4.mm.bing.net/th/id/OIP.YWbXLuj6ERtdAA0dy1oCMAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+  </head>
+
+  <body>
+
+    <div class="ladies-section js-ladies-section">
+      Ladies
+    </div>
+
+    <div class="confirmation-overlay js-confirmation">
+      <div class="confirmation-box">
+        <h2>Are you sure?</h2>
+        <p>This action cannot be undone.</p>
+        <div class="confirmation-buttons">
+          <button class="btn-danger js-confirm-yes">Yes</button>
+          <button class="btn-secondary js-confirm-no">Cancel</button>
+        </div>
+      </div>
+    </div>
+    
+    <nav>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.YWbXLuj6ERtdAA0dy1oCMAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+      <!-- <div class="js-home">
+        Home
+      </div>
+      <div class="js-books">
+        Books
+      </div>
+      <div>
+        Purchase
+      </div>
+      <div>
+        Sell
+      </div>
+      <div>
+        Transaction history
+      </div>
+      <div>
+        Sign out
+      </div>  -->
+
+      <div class="js-home"><i class="fa-solid fa-house"></i> Home</div>
+      <div class="js-books"><i class="fa-solid fa-book"></i> Books</div>
+      <div class="js-purchase"><i class="fa-solid fa-cart-shopping"></i> Purchase</div>
+      <div class="js-sell"><i class="fa-solid fa-handshake"></i> Sell</div>
+      <div class="js-history"><i class="fa-solid fa-clock-rotate-left"></i> History</div>
+      <div class="js-receipt"><i class="fa-solid fa-file-invoice-dollar"></i> Receipt</div>
+      <div class="js-stock"><i class="fa-solid fa-chart-line"></i> Stock</div>
+      <div class="js-signout"><i class="fa-solid fa-right-from-bracket"></i> Sign out</div>
+
+    </nav>
+
+    <section class="main-page">
+      <div class="search-bar">
+        <input  class="js-search-input" placeholder="Search by name...">
+        <img class="search-icon-b js-search-icon" src="https://cdn.iconscout.com/icon/premium/png-128-thumb/search-2651125-2198230.png">
+      </div>
+      <div class="searching-list-b js-searching-list-b">
+      </div>
+      <div class="sold-no-sold-container">
+        <button class="sold-out js-sold-out">Check Sold Outs</button>
+        <button class="no-sold-out js-no-sold-out">Check All</button>
+      </div>
+      <section class="books js-book">
+      </section>
+    </section>
+
+    <script src="scripts/nav.js" type="module"></script>
+    <script src="scripts/book.js" type="module"></script>
+  </body>
+</html>

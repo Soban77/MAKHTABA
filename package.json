@@ -1,0 +1,21 @@
+{
+  "name": "makhtaba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Backend/server.js",
+    "dev": "nodemon Backend/server.js",
+    "create": "node Backend/create.js",
+    "start2": "nodemon Backend/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11",
+    "pg": "^8.17.2"
+  }
+}

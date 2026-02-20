@@ -1,0 +1,75 @@
+.receipt-page {
+  margin-left: 220px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.receipt-page h1 {
+  font-size: 28px;
+  color: #ffe082;
+  text-align: center;
+}
+
+.date-picker {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.date-picker input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.receipt-results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.receipt-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.receipt-card h2 {
+  margin-bottom: 10px;
+  color: #15146a;
+}
+
+.receipt-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.receipt-card th, .receipt-card td {
+  padding: 8px;
+  text-align: left;
+  color: #8f7529;
+}
+
+.receipt-card th {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}

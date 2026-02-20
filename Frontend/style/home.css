@@ -1,0 +1,106 @@
+/*
+body {
+  background-color: rgba(48, 142, 32, 0.7);
+}
+
+section {
+  margin-left: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(101, 150, 34);
+  border-radius: 10px;
+}
+
+section div div {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+section div h1 {
+  align-self: center;
+}
+
+section div div p {
+  font-size: 20px;
+  font-weight: bold;
+}
+*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #3a7bd5, #3a6073);
+  margin: 0;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #ffca28; /* warm golden accent */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.Too {
+  margin-left: 220px;
+}
+
+/* Section layout */
+section {
+  margin-left: 220px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Card styles */
+section div {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+section div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+section div h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffe082;
+}
+
+/* Info rows */
+section div div {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+section div div p {
+  font-size: 18px;
+  font-weight: 600;
+}

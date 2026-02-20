@@ -1,0 +1,42 @@
+.transaction-page {
+  margin-left: 220px;
+  padding: 30px;
+}
+
+.transaction-page h1 {
+  font-size: 28px;
+  color: #ffe082;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.receipt {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease;
+}
+
+.receipt:hover {
+  transform: translateY(-3px);
+}
+
+.receipt h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #161716;
+}
+
+.receipt p {
+  font-size: 15px;
+  margin: 3px 0;
+  color: #2b74d4;
+}
