@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8002;
 app.use(express.static('Frontend'));
 app.use(express.json());
 
-app.use('/Users', require('./routes/user'));
+app.use('/users', require('./routes/user'));
 app.use('/books', require('./routes/books'));
 app.use('/transaction', require('./routes/transaction'));
 app.use('/total', require('./routes/total'));

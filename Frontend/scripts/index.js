@@ -7,7 +7,7 @@ let Users = [];
 
 async function loadUsers()
 {
-  const res = await fetch('/Users');
+  const res = await fetch('/users');
   Users = await res.json();
 }
 
