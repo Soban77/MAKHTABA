@@ -18,10 +18,10 @@ async function loadTransaction() {
   // renderTransactions();
 }
 
-loadTransaction();
+await loadTransaction();
 
 export let books = [];
-loadBooks();
+await loadBooks();
 
 // JSON.parse(localStorage.getItem('bo')) || [{
 //   id: 1,

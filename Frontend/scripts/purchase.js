@@ -3,7 +3,7 @@ import { renderBooks } from "./book.js";
 import { makeTransaction,renderTransactions } from "./history.js";
 
 let books = [];
-loadBooks();
+await loadBooks();
 
 async function loadBooks()
 {
@@ -77,7 +77,7 @@ if(document.querySelector('.js-add-book'))
       }
       else
       {
-        loadBooks();
+        await loadBooks();
 
         let name = document.querySelector('.js-new-name').value;
         let qty = parseInt(document.querySelector('.js-new-quantity').value);
@@ -175,7 +175,7 @@ if(document.querySelector('.js-update-book'))
         })
       });
 
-      loadBooks();
+      await loadBooks();
 
       showSuccess("Book Purchased Successfully!");
 
@@ -248,7 +248,7 @@ if(document.querySelector('.js-sell-book'))
         })
       });
 
-      loadBooks();
+      await loadBooks();
 
       // Sell logic...
       makeTransaction("Sell", name, qty, discount_price * qty);
@@ -654,7 +654,7 @@ if(document.querySelector('.js-return-sale'))
         })
       });
 
-      loadBooks();
+      await loadBooks();
 
       // localStorage.setItem('bo',JSON.stringify(books));
 
