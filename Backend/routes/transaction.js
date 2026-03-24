@@ -7,7 +7,7 @@ router.get('/:id',async (req,res) => {
   const id = req.params.id;
 
   try {
-    const transaction = await pool.query(`SELECT *, TO_CHAR(time, \'HH12:MI AM\') AS formatted_time,TO_CHAR(timestamp, \'YYYY-MM-DD HH12:MI AM\') AS timestamp FROM transactions WHERE user_id = ${id}`);
+    const transaction = await pool.query(`SELECT *, TO_CHAR(time, \'HH12:MI AM\') AS formatted_time,TO_CHAR(timestamp, \'YYYY-MM-DD HH12:MI AM\') AS timestamp FROM transactions WHERE user_id = ${id} ORDER BY id`);
     res.json(transaction.rows);
   } catch (err) {
     res.status(500).json({ error: 'Database error' });
@@ -20,7 +20,7 @@ router.get('/api/:id',async (req,res) => {
   const id = req.params.id;
 
   try {
-    const transaction = await pool.query(`SELECT *,TO_CHAR(date, \'YYYY-MM-DD\') AS date, TO_CHAR(time, \'HH12:MI AM\') AS time, TO_CHAR(timestamp, \'YYYY-MM-DD HH12:MI AM\') AS timestamp FROM transactions WHERE user_id = ${id}`);
+    const transaction = await pool.query(`SELECT *,TO_CHAR(date, \'YYYY-MM-DD\') AS date, TO_CHAR(time, \'HH12:MI AM\') AS time, TO_CHAR(timestamp, \'YYYY-MM-DD HH12:MI AM\') AS timestamp FROM transactions WHERE user_id = ${id} ORDER BY id`);
     res.json(transaction.rows);
   } catch(err) {
     res.status(500).json({ error: 'Database error' });

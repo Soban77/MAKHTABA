@@ -3,7 +3,7 @@ import { renderBooks } from "./book.js";
 import { makeTransaction,renderTransactions } from "./history.js";
 
 let books = [];
-await loadBooks();
+loadBooks();
 
 async function loadBooks()
 {
@@ -13,7 +13,7 @@ async function loadBooks()
   const res = await fetch(`/books/${id}`);
   books = await res.json();
 
-  renderBooks(books);
+  // renderBooks(books);
 }
 
 function showSuccess(message) {
@@ -272,7 +272,7 @@ if(document.querySelector('.js-sell-name'))
 {
   document.querySelector('.js-sell-name').addEventListener('input',async () => {
 
-    await loadBooks();
+    // await loadBooks();
 
     if(document.querySelector('.js-sell-name').value !== '')
     {
@@ -325,7 +325,7 @@ if(document.querySelector('.js-return-sale-name'))
 {
   document.querySelector('.js-return-sale-name').addEventListener('input', () => {
 
-    loadBooks();
+    // loadBooks();
 
     if(document.querySelector('.js-return-sale-name').value !== '')
     {
@@ -378,7 +378,7 @@ if(document.querySelector('.js-update-name'))
 {
   document.querySelector('.js-update-name').addEventListener('input', () => {
 
-    loadBooks();
+    // loadBooks();
 
     if(document.querySelector('.js-update-name').value !== '')
     {
@@ -431,7 +431,7 @@ if(document.querySelector('.js-return-purchase-name'))
 {
   document.querySelector('.js-return-purchase-name').addEventListener('input', () => {
 
-    loadBooks();
+    // loadBooks();
 
     if(document.querySelector('.js-return-purchase-name').value !== '')
     {
@@ -495,7 +495,7 @@ if(document.querySelector('.js-delete-book'))
         method: 'DELETE'
       });
 
-      loadBooks();
+      await loadBooks();
 
       // localStorage.setItem('bo',JSON.stringify(books));
 
@@ -576,7 +576,7 @@ if(document.querySelector('.js-return-purchase'))
         })
       });
 
-      loadBooks();
+      await loadBooks();
 
       // localStorage.setItem('bo',JSON.stringify(books));
 

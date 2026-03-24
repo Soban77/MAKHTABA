@@ -12,7 +12,7 @@ async function loadTransaction() {
 
   transactions = t;
 
-  renderTransactions();
+  // renderTransactions();
 }
 
 await loadTransaction();

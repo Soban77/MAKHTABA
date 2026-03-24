@@ -13,14 +13,14 @@ async function loadTransaction() {
 
   transactions = t;
 
-  renderTransactions();
+  // renderTransactions();
 }
 
 await loadTransaction();
 
 async function generateStockSummary() {
 
-  await loadTransaction();
+  // await loadTransaction();
 
   const sales = transactions.filter(t => t.type === "Sell");
   const purchases = transactions.filter(t => t.type === "Purchase");

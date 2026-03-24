@@ -12,7 +12,7 @@ async function loadBooks()
   const res = await fetch(`/books/${id}`);
   books = await res.json();
 
-  renderBooks(books);
+  // renderBooks(books);
 }
 
 export function renderBooks(books1) {

@@ -6,9 +6,9 @@ router.get('/',async (req,res) => {
   try {
     const users = await pool.query('SELECT * FROM users');
 
-    console.log("Backend users:", users.rows);
+    // console.log("Backend users:", users.rows);
 
-      res.json(users.rows);
+    res.json(users.rows);
   } catch(err) {
     console.error("DB error:", err);
 

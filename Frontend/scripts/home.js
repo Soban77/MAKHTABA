@@ -15,10 +15,10 @@ async function loadTransaction() {
 
   transactions = t;
 
-  renderTransactions();
+  // renderTransactions();
 }
 
-await loadTransaction();
+loadTransaction();
 
 export let books = [];
 loadBooks();
@@ -46,7 +46,7 @@ async function loadBooks()
   const res = await fetch(`/books/${id}`);
   books = await res.json();
 
-  renderHome();
+  // renderHome();
 }
 
 
